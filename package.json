@@ -1,0 +1,30 @@
+{
+    "name": "vscode-ntsl",
+    "displayName": "vscode-ntsl",
+    "description": "NTSL Colorised for VSCode",
+    "version": "0.0.1",
+    "publisher": "AffectedArc07",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AffectedArc07/VSCode-NTSL.git"
+    }
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ntsl",
+            "aliases": ["NTSL", "ntsl"],
+            "extensions": [".ntsl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ntsl",
+            "scopeName": "source.ntsl",
+            "path": "./syntaxes/ntsl.tmLanguage.json"
+        }]
+    }
+}
